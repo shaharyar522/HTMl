@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h2>FORM HTML </h2>
+    <form action="backend.php">
+        <!-- basicallay jo hamray pass action jo hnta hain uay asall main hamray pass bakand data hnta hian  -->
+        <label for="name"> NAME</label>
+        <!-- es ka matbalb hain agr ap form main jaa kay name par click karay guy to wo carsor us main blinked  karnay lag jain ga   our  jo hum for main lehkay guy id main behi wohi ayen ga-->
+        <div>
+            <input type="text" name="my name" id="name">
+
+            <!-- uay jo hum name lihktay hain uay hamaray passs backend main data store hnta hain  -->
+        </div>
+        <br>
+
+        <div>
+            FATHER NAME: <input type="text" name="father name">
+
+        </div>
+        <br>
+        <div>
+            <!-- es main behi  label lagya hain   id wohi hnne cahye jo kay for kay andar dia hain -->
+            <label for="email"> EMAIL</label>
+            <input type="email" name=" my email" id="email">
+
+        </div>
+        <br>
+        <div>
+            DATE: <input type="date" name="my date">
+        </div>
+        <div>
+            are you eligibility? <input type="checkbox" name="my eligibility">
+        </div> <br>
+        <div>
+            <div>
+                are you eligibility? <input type="checkbox" name="my eligibility" checked>
+                <!-- agr ap checked rahkna cahtay hon to hum last main checked lihk dain gay  wo buy defult checked rahye ga  -->
+            </div> <br>
+        </div>
+        <div>
+            bouns: <input type="number" name="my bouns">
+        </div> <br>
+        <div>
+            GENDER: male<input type="radio" name="my gender"> female<input type="radio" name="my gender">
+
+            other<input type="radio" name="my gender">
+        </div>
+        <!-- alt + down button uay hamray passs button jo kayu necay lay attay hain hainm  -->
+        <br>
+        <div>
+            write about your self: <br> <textarea name=" my text" cols="70" rows="30"></textarea>
+            <!-- es main jo cols="30" uay width ko bahrtaa hain rows="10" uiay hamray pass length ko bahrta hain  -->
+        </div>
+        <br>
+        <div>
+            <!-- hum nay koe label lagya hian selected kay andar option hnta hian  -->
+            <label for="car"> car</label>
+            <select name="my Car" id="car">
+                <option value="bmb"> BMW</option>
+                <!-- agr ap cahtay hain kay already select rahye koe ek option to ahsay hnga  -->
+                <option value="honda" selected> HONDA </option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="submitted now">
+            <input type="reset" value="reset now">
+            <!-- value main hum jo type karay guy  wohi hamray pass show hngi web page main  -->
+        </div>
+    </form>
+
+</body>
+
+</html>
